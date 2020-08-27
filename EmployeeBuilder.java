@@ -5,20 +5,30 @@ import java.util.*;
 class computewage
 {
 	public void wagecalculation()
-	{
+	{	
 		final int EMP_RATE_PER_HOUR = 20;
-		final int HOURS_FULL_DAY = 8;
-		//int totalwage = EMP_RATE_PER_HOUR*HOURS_FULL_DAY;
-		//System.out.println("Full time Employee wage per day is: "+totalwage);
+                final int HOURS_FULL_DAY = 8;
+                final int IS_PART_TIME = 1;
+                final int IS_FULL_TIME = 2;
+		int empHrs = 0;
+		//computation
+		int empCheck = (int) (Math.floor(Math.random() * 10) %3);
+		
+		//switchcase to check fulltime or parttime
+		switch (empCheck) {
+ 			case IS_FULL_TIME:
+				empHrs = 8;
+				break;
+			case IS_PART_TIME:
+				empHrs = 4;
+				break;
+			default:
+				empHrs = 0;
+				break;
+		}
+		int totalEmpWage = empHrs*EMP_RATE_PER_HOUR;
+        	System.out.println("Total Employee Daily wage :" + totalEmpWage);
 	}
-	public void part_time_wagecalculation()
-        {
-                final int EMP_RATE_PER_HOUR = 20;
-                final int HOURS_FULL_DAY = 4;
-                int totalwage = EMP_RATE_PER_HOUR*HOURS_FULL_DAY;
-                System.out.println("Part time Employee wage per day is: "+totalwage);
-        }
-
 }
 
 //main class
@@ -29,10 +39,9 @@ public class EmployeeBuilder
 
 		System.out.println("Welcome to Employee wage computation program");
 		computewage cmpt = new computewage();
-		cmpt.wagecalculation();
-		cmpt.part_time_wagecalculation();
-    
+		cmpt.wagecalculation();    
 	  attendance atd = new attendance();
 		atd.attendancecheck();
+
 	}
 }
