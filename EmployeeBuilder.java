@@ -26,10 +26,13 @@ public class EmployeeBuilder
 {
 	public static void main(String args[])
 	{
+
 		System.out.println("Welcome to Employee wage computation program");
 		computewage cmpt = new computewage();
 		cmpt.wagecalculation();
 		cmpt.part_time_wagecalculation();
-
+    
+	  attendance atd = new attendance();
+		atd.attendancecheck();
 	}
 }
