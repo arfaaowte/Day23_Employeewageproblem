@@ -25,7 +25,6 @@ public class EmployeeBuilder
 {
 	public static void main(String args[])
 	{
-		System.out.println("Welcome to Employee wage computation program");
 	        attendance atd = new attendance();
 		atd.attendancecheck();
 	}
