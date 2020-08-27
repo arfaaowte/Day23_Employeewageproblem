@@ -28,6 +28,7 @@ class computewage
                 final int HOURS_FULL_DAY = 8;
                 final int IS_PART_TIME = 1;
                 final int IS_FULL_TIME = 2;
+		final int NUM_OF_WORKING_DAYS = 20;
 		int empHrs = 0;
 		//computation
 		int empCheck = (int) (Math.floor(Math.random() * 10) %3);
@@ -44,8 +45,8 @@ class computewage
 				empHrs = 0;
 				break;
 		}
-		int totalEmpWage = empHrs*EMP_RATE_PER_HOUR;
-        	System.out.println("Total Employee Daily wage :" + totalEmpWage);
+		int totalEmpWage = empHrs*EMP_RATE_PER_HOUR*NUM_OF_WORKING_DAYS;
+        	System.out.println("Total Employee Monthly wage is :" + totalEmpWage);
 	}
 }
 
