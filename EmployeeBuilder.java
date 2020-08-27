@@ -1,31 +1,38 @@
 import java.util.*;
 
-class attendance
-{
-	public void attendancecheck(){
-		Random rand = new Random();
 
-                // Generate random integers in range 0 to 1
-        	int rand_int1 = rand.nextInt(2);
-        
-	       	// Check Attendance
-		if(rand_int1 == 0)
-		{
-        		System.out.println("Employee is Absent");
-		}
-		else
-		{
-			System.out.println("Employee is Present");
-		}
+//class to computewage of employee
+class computewage
+{
+	public void wagecalculation()
+	{
+		final int EMP_RATE_PER_HOUR = 20;
+		final int HOURS_FULL_DAY = 8;
+		//int totalwage = EMP_RATE_PER_HOUR*HOURS_FULL_DAY;
+		//System.out.println("Full time Employee wage per day is: "+totalwage);
 	}
+	public void part_time_wagecalculation()
+        {
+                final int EMP_RATE_PER_HOUR = 20;
+                final int HOURS_FULL_DAY = 4;
+                int totalwage = EMP_RATE_PER_HOUR*HOURS_FULL_DAY;
+                System.out.println("Part time Employee wage per day is: "+totalwage);
+        }
+
 }
 
-
+//main class
 public class EmployeeBuilder
 {
 	public static void main(String args[])
 	{
-	        attendance atd = new attendance();
+
+		System.out.println("Welcome to Employee wage computation program");
+		computewage cmpt = new computewage();
+		cmpt.wagecalculation();
+		cmpt.part_time_wagecalculation();
+    
+	  attendance atd = new attendance();
 		atd.attendancecheck();
 	}
 }
