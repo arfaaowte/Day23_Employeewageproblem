@@ -1,7 +1,25 @@
 import java.util.*;
 
+class attendance
+{
+	public void attendancecheck(){
+		Random rand = new Random();
 
-//class to computewage of employee
+           // Generate random integers in range 0 to 1
+        	int rand_int1 = rand.nextInt(2);
+        
+	       	// Check Attendance 
+		if(rand_int1 == 0)
+		{
+        		System.out.println("Employee is Absent");
+		}
+		else
+		{
+			System.out.println("Employee is Present");
+    }
+  }
+  
+//class to compute wage of employee
 class computewage
 {
 	public void wagecalculation()
