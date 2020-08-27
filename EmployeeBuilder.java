@@ -8,7 +8,7 @@ class attendance
                 // Generate random integers in range 0 to 1
         	int rand_int1 = rand.nextInt(2);
         
-	       	// Check Attendance
+	       	// Check Attendance 
 		if(rand_int1 == 0)
 		{
         		System.out.println("Employee is Absent");
