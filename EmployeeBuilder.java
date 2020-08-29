@@ -121,6 +121,8 @@ public class EmployeeBuilder
 		computewage cmpt = new computewage();
 		cmpt.wagecalculation();
 		cmpt.wagecalculation_company1();
+    UC9_Wageforallcompany
+		System.out.println(cmpt);
 	  attendance atd = new attendance();
 		atd.attendancecheck();
 	}
