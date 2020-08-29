@@ -1,4 +1,4 @@
-/************************************* 
+/************************************ 
 *
 *
 *Program : To compute Employeewage on mothly and daily bases. 
