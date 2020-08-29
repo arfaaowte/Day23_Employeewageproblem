@@ -1,5 +1,19 @@
+/*************************************** 
+* 
+* 
+*Program : To compute Employeewage on mothly and daily bases. 
+* 
+* 
+* 
+* 
+* 
+*@author : Arfa 
+*@since : 29/08/2020 
+* 
+* 
+* 
+***************************************/ 
 import java.util.*;
-
 
 //class to computewage of employee
 class computewage
