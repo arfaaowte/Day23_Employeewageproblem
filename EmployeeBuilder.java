@@ -1,4 +1,21 @@
+/*************************************** 
+* 
+* 
+*Program : To compute Employeewage on mothly and daily bases. 
+* 
+* 
+* 
+* 
+* 
+*@author : Arfa 
+*@since : 29/08/2020 
+* 
+* 
+* 
+***************************************/ 
 import java.util.*;
+
+//class to check attendance
 
 class attendance
 {
@@ -20,6 +37,7 @@ class attendance
   }
   
 //class to compute wage of employee
+
 class computewage
 {
 	public void wagecalculation()
