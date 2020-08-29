@@ -97,5 +97,6 @@ public class EmployeeBuilder
 		computewage cmpt = new computewage();
 		cmpt.wagecalculation();
 		cmpt.wagecalculation_company1();
+		System.out.println(cmpt);
 	}
 }
