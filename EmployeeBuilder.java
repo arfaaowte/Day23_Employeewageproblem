@@ -1,4 +1,4 @@
-/************************************** 
+/************************************ 
 *
 *
 *Program : To compute Employeewage on mothly and daily bases. 
@@ -121,6 +121,8 @@ public class EmployeeBuilder
 		computewage cmpt = new computewage();
 		cmpt.wagecalculation();
 		cmpt.wagecalculation_company1();
+    UC11_Multiplecompanyemp
+		System.out.println(cmpt);
 	  attendance atd = new attendance();
 		atd.attendancecheck();
 	}
