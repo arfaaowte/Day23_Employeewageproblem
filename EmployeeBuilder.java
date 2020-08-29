@@ -15,7 +15,29 @@
 ***************************************/ 
 import java.util.*;
 
-//class to computewage of employee
+//class to check attendance
+
+class attendance
+{
+	public void attendancecheck(){
+		Random rand = new Random();
+
+           // Generate random integers in range 0 to 1
+        	int rand_int1 = rand.nextInt(2);
+        
+	       	// Check Attendance 
+		if(rand_int1 == 0)
+		{
+        		System.out.println("Employee is Absent");
+		}
+		else
+		{
+			System.out.println("Employee is Present");
+    }
+  }
+  
+//class to compute wage of employee
+
 class computewage
 {
 	public void wagecalculation()
@@ -58,9 +80,12 @@ public class EmployeeBuilder
 {
 	public static void main(String args[])
 	{
+
 		System.out.println("Welcome to Employee wage computation program");
 		computewage cmpt = new computewage();
-		cmpt.wagecalculation();
+		cmpt.wagecalculation();    
+	  attendance atd = new attendance();
+		atd.attendancecheck();
 
 	}
 }
